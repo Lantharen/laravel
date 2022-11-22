@@ -2,10 +2,13 @@
 @section('page-title', 'Marathon Digital Holdings – Building America\'s Leading Enterprise Bitcoin Miner')
 @section('page-class', 'blog fl-theme-builder-header fl-theme-builder-header-header fl-theme-builder-footer fl-theme-builder-footer-footer fl-theme-builder-archive fl-theme-builder-archive-posts-archive fl-framework-base fl-preset-default fl-full-width fl-search-active fl-builder-breakpoint-large')
 @section('page-content')
+
+    <div class="fl-page">
+
     @include('pages.includes.header')
 
-    <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
 
+    <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
         <div class="fl-builder-content fl-builder-content-179 fl-builder-global-templates-locked" data-post-id="179">
             <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-603e97388c688 fl-row-bg-overlay"
                  data-node="603e97388c688">
@@ -108,6 +111,7 @@
             </div>
         </div>
         <div class="uabb-js-breakpoint" style="display: none;"></div>
+    </div>
     </div>
     @include('pages.includes.footer')
 @endsection
