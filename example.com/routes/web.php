@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','pages.home');
-Route::view('/posts','pages.posts');
-
+Route::view('/', 'pages.home');
+Route::view('/posts', 'pages.posts');
+Route::view('/about', 'pages.about');

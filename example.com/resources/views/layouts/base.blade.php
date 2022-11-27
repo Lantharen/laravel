@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
     <title>@yield('page-title')</title>
 
     <meta name="robots" content="noindex,nofollow">
@@ -13,6 +12,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//i0.wp.com">
     <link rel="dns-prefetch" href="//c0.wp.com">
+
     <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
 
     <style>
@@ -29,12 +29,15 @@
             padding: 0 !important;
         }
     </style>
-    <link rel="stylesheet" id="wp-block-library-css" href="{{ asset('/c/6.1/wp-includes/css/dist/block-library/style.min.css') }}" media="all">
+
+    <link rel="stylesheet" id="wp-block-library-css" href="{{ asset('/c/6.1/wp-includes/css/dist/block-library/style.css') }}" media="all">
+
     <style id="wp-block-library-inline-css">
         .has-text-align-justify {
             text-align: justify;
         }
     </style>
+
     <style id="wp-block-library-theme-inline-css">
         .wp-block-audio figcaption {
             color: #555;
@@ -227,9 +230,10 @@
             margin-bottom: 0
         }
     </style>
-    <link rel="stylesheet" id="mediaelement-css" href="{{ asset('/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css') }}" media="all">
-    <link rel="stylesheet" id="wp-mediaelement-css" href="{{ asset('/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.min.css') }}" media="all">
-    <link rel="stylesheet" id="classic-theme-styles-css" href="{{ asset('/c/6.1/wp-includes/css/classic-themes.min.css') }}" media="all">
+
+    <link rel="stylesheet" id="mediaelement-css" href="{{ asset('/c/6.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.css') }}" media="all">
+    <link rel="stylesheet" id="wp-mediaelement-css" href="{{ asset('/c/6.1/wp-includes/js/mediaelement/wp-mediaelement.css') }}" media="all">
+    <link rel="stylesheet" id="classic-theme-styles-css" href="{{ asset('/c/6.1/wp-includes/css/classic-themes.css') }}" media="all">
 
     <style id="global-styles-inline-css">
         body {
@@ -567,10 +571,10 @@
 
     <link rel="stylesheet" id="fl-builder-layout-5-css" href="{{ asset('/wp-content/uploads/bb-plugin/cache/5-layout.css') }}" media="all">
     <link rel="stylesheet" id="marathon-btc-data-css" href="{{ asset('/wp-content/plugins/marathon-btc-data/marathon-btc-data.css') }}" media="all">
-    <link rel="stylesheet" id="font-awesome-5-css" href="{{ asset('/wp-content/plugins/bb-plugin//fonts/fontawesome/5.15.4/css/all.min.css/') }}" media="all">
+    <link rel="stylesheet" id="font-awesome-5-css" href="{{ asset('/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/all.css') }}" media="all">
     <link rel="stylesheet" id="fl-builder-layout-bundle-10ab935c02c7d5308db2704d115e1899-css" href="{{ asset('/wp-content/uploads/bb-plugin/cache/10ab935c02c7d5308db2704d115e1899-layout-bundle.css') }}" media="all">
-    <link rel="stylesheet" id="jquery-magnificpopup-css" href="{{ asset('/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css') }}" media="all">
-    <link rel="stylesheet" id="base-css" href="{{ asset('/wp-content/themes/bb-theme/css/base.min.css') }}" media="all">
+    <link rel="stylesheet" id="jquery-magnificpopup-css" href="{{ asset('/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.css') }}" media="all">
+    <link rel="stylesheet" id="base-css" href="{{ asset('/wp-content/themes/bb-theme/css/base.css') }}" media="all">
     <link rel="stylesheet" id="fl-automator-skin-css" href="{{ asset('/wp-content/uploads/bb-theme/skin-631bb44540584.css') }}" media="all">
     <link rel="stylesheet" id="fl-child-theme-css" href="{{ asset('/wp-content/themes/marathon-child/style.css') }}" media="all">
     <link rel="stylesheet" id="fl-builder-google-fonts-bd9c743123e20b55cb0ad8ec15daccbc-css" href="//fonts.googleapis.com/css?family=Noto+Sans+JP%3A300%2C400%2C700%2C400%2C300" media="all">
@@ -580,22 +584,33 @@
     <script src="{{ asset('/c/6.1/wp-includes/js/jquery/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
     <script src="{{ asset('/c/6.1/wp-includes/js/imagesloaded.min.js') }}" id="imagesloaded-js"></script>
 
-    <style type="text/css">img#wpstats {
+    <style type="text/css">
+        img#wpstats {
             display: none
-        }</style>
-    <style>.recentcomments a {
+        }
+    </style>
+    <style>
+        .recentcomments a {
             display: inline !important;
             padding: 0 !important;
             margin: 0 !important;
-        }</style>
+        }
+    </style>
+
     <link rel="icon" href="{{ asset('/wp-content/uploads/2022/09/cropped-3f0849c4dc31e6a8b61bbf5a2e6d9ca1-32x32.png') }}" sizes="32x32">
     <link rel="icon" href="{{ asset('/wp-content/uploads/2022/09/cropped-3f0849c4dc31e6a8b61bbf5a2e6d9ca1-192x192.png') }}" sizes="192x192">
     <link rel="apple-touch-icon" href="{{ asset('/wp-content/uploads/2022/09/cropped-3f0849c4dc31e6a8b61bbf5a2e6d9ca1-180x180.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('wp-content/uploads/2022/09/cropped-3f0849c4dc31e6a8b61bbf5a2e6d9ca1-270x270.png') }}">
 
-    <meta name="msapplication-TileImage" content="{{ asset('/wp-content/uploads/2022/09/cropped-3f0849c4dc31e6a8b61bbf5a2e6d9ca1-270x270.png') }}">
-
+    <style>
+        .hiclass {
+            background-color: rgb(51, 144, 255);
+            color: white
+        }
+    </style>
 </head>
 <body class="@yield('page-class')">
+
 @yield('page-content')
 
 <script src="{{ asset('/p/jetpack/10.7/_inc/build/photon/photon.min.js') }}" id="jetpack-photon-js"></script>
@@ -607,10 +622,6 @@
 <script id="fl-automator-js-extra">
     var themeopts = {"medium_breakpoint": "992", "mobile_breakpoint": "768"};
 </script>
-<script src="{{ asset('/wp-content/themes/bb-theme/js/theme.min.js') }}"
-        id="fl-automator-js"></script>
-
-
-
+<script src="{{ asset('/wp-content/themes/bb-theme/js/theme.min.js') }}" id="fl-automator-js"></script>
 </body>
 </html>
